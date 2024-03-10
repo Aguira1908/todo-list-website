@@ -75,9 +75,9 @@ const TodoList = () => {
     setSortByPriority(!sortByPriority);
     const sortedTasks = [...filteredTasks].sort((a, b) => {
       if (a.priority !== b.priority) {
-        return a.priority ? -1 : 1; // Urutkan berdasarkan prioritas
+        return a.priority ? -1 : 1;
       } else {
-        return a.id - b.id; // Jika prioritas sama, urutkan berdasarkan ID terkecil
+        return a.id - b.id;
       }
     });
     setFilteredTasks(sortedTasks);
@@ -85,7 +85,6 @@ const TodoList = () => {
 
   return (
     <>
-      {/* Header dengan judul aplikasi dan tombol untuk membuat tugas baru */}
       <div className="header">
         <h3>Todo List</h3>
         <button className="button-create-task" onClick={() => setModal(true)}>
