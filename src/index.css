@@ -1,13 +1,118 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+html {
+  font-family: "raleway";
+}
+.header {
+  height: 200px;
+  background-color: #d8eefe;
+  padding: 10px 50px;
+  color: #094067;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header h3 {
+  font-size: 50px;
+  font-weight: 600;
+}
+.button-create-task {
+  margin: 10px 5px;
+  padding: 15px 10px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #5f6c7b;
+  border: none;
+  background-color: #fffffe;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+  cursor: pointer;
+  outline: none;
+  width: 10%;
+}
+.button-create-task:hover {
+  background-color: #3da9fc;
+  box-shadow: 0px 15px 20px #3da9fc50;
+  color: white;
+  transform: translateY(-2px);
+}
+.button-create-task:active {
+  transform: translateY(1px);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.filter-container {
+  display: flex;
+  background-color: #fffffe;
+  padding: 15px 50px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.filter-container .button-filter {
+  background-color: #fffffe;
+  color: #5f6c7b;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+
+  border: none;
+  margin: 10px;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-size: 15px;
+  transition: all 0.5s;
+  font-weight: 400;
+}
+.button-filter:hover {
+  background-color: #3da9fc;
+  color: #fffffe;
+}
+
+.task-container {
+  margin: 0 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-wrapper {
+  width: 270px;
+  height: 200px;
+  box-shadow: 0px 3px 50px #a5a5a5;
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+}
+
+.card-top {
+  width: 100%;
+  height: 2%;
+}
+
+.task-holder {
+  height: 100%;
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-header {
+  height: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  margin: 5px 0;
+  padding: 1px !important;
+}
+.task-description {
+  height: 100%;
+}
+.card-bottom {
+  background-color: lightblue;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
 }
